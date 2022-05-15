@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Landing Page com BootStrap</title>
+
+<!--Importando o BootStrap-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style/slider.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+</head>
+
+<body>
+<!-- Inicio da barra de navegação -->
+    -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="custon-logo" src="assets/img/Logo-1Click.png"
+                    alt="Logo tipo 1-click"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Planos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Fim da barra de navegação -->
+    <header>
+<!-- Slider -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url(assets/img/1-click.jpg)">
+                    <div class="carousel-caption">
+                        <h5>1-CLICK</h5>
+                        <p>O Futuro do Mercado de Trabalho ao alcace da sua mão!</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url(assets/img/FullStack.jpg)">
+                    <div class="carousel-caption">
+                        <h5>Seja um desenvolvedor FullStack</h5>
+                        <p>Conheça as técnologias mais usadas no mercado!</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url(assets/img/data-security.jpg)">
+                    <div class="carousel-caption">
+                        <h5>DATA SECURITY</h5>
+                        <p>Aumente o nível de segurança de todos os ambientes e devices, incluindo Cloud, IA e IoT.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <!-- Final Slider -->
+
+    <!-- tabela de preço -->
+    <hr class="featurette-divider">
+
+    <a id="sobre"></a>
+    <div class="container">
+
+<!--Sobre-->
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">What is Lorem Ipsum?</h2>
+                <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry..
+                    <br /><br />
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    <br /><br />
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid rounded-top mx-auto" src="assets/img/setup.jpg" 
+                    alt="Setup Dev">
+            </div>
+        </div>
+<!--Fim do Sobre-->
+
+
+
+<!--Preços-->
+        <a id="precos"></a>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h1 class="display-4">Planos</h1>
+            <p class="lead">Confira os valores dos nossos planos, e mude seu futuro!</p>
+        </div>
+
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Plano Data Security</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">R$ 499<small class="text-muted">,00</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li> Entenda os principios de segurança de dados colocando a mão na massa.</li>
+                        <li>Parcelamento em até 4x sem juros</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Assinar</button>
+                </div>
+            </div>
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Plano Front-end e Back-and</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">R$ 800<small class="text-muted">,00</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Aprenda as tecnologias mais usadas no mercado e mude seu futuro.</li>
+                        <li>Parcelamento em até 4x sem juros</li>
+
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Assinar</button>
+                </div>
+            </div>
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Plano FullStack</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">R$ 1.200<small class="text-muted">,00</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Entenda os principios de segurança de dados colocando a mão na massa.</li>
+                        <li>Aprenda as tecnologias mais usadas no mercado e mude seu futuro.</li>
+                        <li>Parcelamento em até 4x sem juros</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Assinar</button>
+                </div>
+            </div>
+        </div>
+<!--Fim Preços-->
+
+<!--Contatos-->
+        <a id="contatos"></a>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h1 class="display-4">Contatos</h1>
+            <p class="lead">
+
+                Entre em contato: 
+
+                <p>
+                    <a target="_blank" href="https://www.instagram.com/mizaka_machado/">
+                        <button class="btn btn-outline-secondary"><i class="fab fa-instagram"></i> Instagram</button>
+                    </a>
+
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=5511962039111&text=Ol%C3%A1!">
+                        <button class="btn btn-outline-secondary"><i class="fab fa-whatsapp"></i> Whatsapp</button>
+                    </a>
+                </p>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.113362720253!2d-46.43529768558643!3d-23.528424766260652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce641ba0e32e8d%3A0x8425c18dcd17cbd6!2sR.%20Renzo%20Baldini%2C%20574%20-%20Parada%20XV%20de%20Novembro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008248-000!5e0!3m2!1spt-BR!2sbr!4v1652571148563!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            </p>
+        </div>
+<!--Fim do Contatos-->
+    </div>
+</body>
+
+</html>
